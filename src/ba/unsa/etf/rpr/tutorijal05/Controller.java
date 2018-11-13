@@ -1,7 +1,6 @@
 package ba.unsa.etf.rpr.tutorijal05;
 
 import javafx.beans.property.SimpleStringProperty;
-import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 
 public class Controller {
@@ -30,7 +29,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija)imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "1");
     }
 
@@ -39,7 +38,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "2");
     }
 
@@ -48,7 +47,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "3");
     }
 
@@ -57,7 +56,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "4");
     }
 
@@ -66,7 +65,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "5");
     }
 
@@ -75,7 +74,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "6");
     }
 
@@ -84,7 +83,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "7");
     }
 
@@ -93,7 +92,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "8");
     }
 
@@ -102,7 +101,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         value.set(value.get() + "9");
     }
 
@@ -111,7 +110,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
-        if(imaOperacija )imaDrugiBroj = true;
+        if (imaOperacija) imaDrugiBroj = true;
         if (!value.get().equals("0")) value.set(value.get() + "0");
     }
 
@@ -120,15 +119,15 @@ public class Controller {
             value.set("0.");
             imaJednako = false;
             imaTacka = true;
-            if(imaOperacija )imaDrugiBroj = true;
+            if (imaOperacija) imaDrugiBroj = true;
             return;
         }
-        if(!imaTacka) value.set(value.get() + ".");
+        if (!imaTacka) value.set(value.get() + ".");
         imaTacka = true;
     }
 
     public void plusBtn() {
-        if(imaDrugiBroj) equalsBtn();
+        if (imaDrugiBroj) equalsBtn();
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
@@ -136,7 +135,7 @@ public class Controller {
     }
 
     public void minusBtn() {
-        if(imaDrugiBroj) equalsBtn();
+        if (imaDrugiBroj) equalsBtn();
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
@@ -145,7 +144,7 @@ public class Controller {
     }
 
     public void multiplyBtn() {
-        if(imaDrugiBroj) equalsBtn();
+        if (imaDrugiBroj) equalsBtn();
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
@@ -154,7 +153,7 @@ public class Controller {
     }
 
     public void divideBtn() {
-        if(imaDrugiBroj) equalsBtn();
+        if (imaDrugiBroj) equalsBtn();
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
@@ -163,7 +162,7 @@ public class Controller {
     }
 
     public void percentBtn() {
-        if(imaDrugiBroj) equalsBtn();
+        if (imaDrugiBroj) equalsBtn();
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
@@ -172,20 +171,19 @@ public class Controller {
     }
 
     public void equalsBtn() {
-        if(imaOperacija) {
+        if (imaOperacija) {
             imaJednako = true;
             double drugiBroj = Double.parseDouble(value.get());
-            if(operacija == '+')
+            if (operacija == '+')
                 value.set(String.valueOf(prviBroj + drugiBroj));
-            else if(operacija == '-')
+            else if (operacija == '-')
                 value.set(String.valueOf(prviBroj - drugiBroj));
-            else if(operacija == '*')
+            else if (operacija == '*')
                 value.set(String.valueOf(prviBroj * drugiBroj));
-            else if(operacija == '/') {
-                if(drugiBroj == 0) value.set("NaN");
+            else if (operacija == '/') {
+                if (drugiBroj == 0) value.set("NaN");
                 else value.set(String.valueOf(prviBroj / drugiBroj));
-            }
-            else if(operacija == '%')
+            } else if (operacija == '%')
                 value.set(String.valueOf(prviBroj % drugiBroj));
 
             imaOperacija = false;

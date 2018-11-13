@@ -8,101 +8,142 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <?import javafx.scene.control.Button?>
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+          prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
     <stylesheets>
-        <URL value="@digitron.css" />
+        <URL value="@digitron.css"/>
     </stylesheets>
 
     <columnConstraints>
-    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="183.0" minWidth="10.0" percentWidth="25.0" prefWidth="151.0" />
-    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="253.0" minWidth="10.0" percentWidth="25.0" prefWidth="157.0" />
-      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="192.0" minWidth="10.0" percentWidth="25.0" prefWidth="150.0" />
-      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="149.0" minWidth="10.0" percentWidth="25.0" prefWidth="142.0" />
-  </columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="183.0" minWidth="10.0" percentWidth="25.0"
+                           prefWidth="151.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="253.0" minWidth="10.0" percentWidth="25.0"
+                           prefWidth="157.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="192.0" minWidth="10.0" percentWidth="25.0"
+                           prefWidth="150.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="149.0" minWidth="10.0" percentWidth="25.0"
+                           prefWidth="142.0"/>
+    </columnConstraints>
 
-  <rowConstraints>
-      <RowConstraints />
-      <RowConstraints maxHeight="89.0" minHeight="10.0" percentHeight="20" prefHeight="89.0" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="122.0" minHeight="10.0" percentHeight="20.0" prefHeight="63.0" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="123.0" minHeight="10.0" percentHeight="20" prefHeight="31.0" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="121.0" minHeight="10.0" percentHeight="20" prefHeight="28.0" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="101.0" minHeight="10.0" percentHeight="20" prefHeight="25.0" vgrow="ALWAYS" />
-      <RowConstraints maxHeight="157.0" minHeight="10.0" percentHeight="20" prefHeight="86.0" vgrow="ALWAYS" />
-  </rowConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints maxHeight="89.0" minHeight="10.0" percentHeight="20" prefHeight="89.0" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="122.0" minHeight="10.0" percentHeight="20.0" prefHeight="63.0" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="123.0" minHeight="10.0" percentHeight="20" prefHeight="31.0" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="121.0" minHeight="10.0" percentHeight="20" prefHeight="28.0" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="101.0" minHeight="10.0" percentHeight="20" prefHeight="25.0" vgrow="ALWAYS"/>
+        <RowConstraints maxHeight="157.0" minHeight="10.0" percentHeight="20" prefHeight="86.0" vgrow="ALWAYS"/>
+    </rowConstraints>
 
-      <Label fx:id="display"  maxWidth="Infinity" prefHeight="40.0" prefWidth="61.0" text="${controller.value}" GridPane.columnSpan="4" GridPane.rowIndex="1">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin>
-      </Label>
-      <Button id="equalsBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#equalsBtn" prefHeight="80.0" prefWidth="40.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
+    <Label fx:id="display" maxWidth="Infinity" prefHeight="40.0" prefWidth="61.0" text="${controller.value}"
+           GridPane.columnSpan="4" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Label>
+    <Button id="equalsBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#equalsBtn" prefHeight="80.0"
+            prefWidth="40.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
 
-      <Button id="btn1" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn1" prefHeight="27.0" prefWidth="40.0" text="1" GridPane.rowIndex="5">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="btn2" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn2" prefHeight="27.0" prefWidth="40.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="5">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="btn3" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn3" prefHeight="27.0" prefWidth="40.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="5">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="btn4" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn4" prefHeight="27.0" prefWidth="40.0" text="4" GridPane.rowIndex="4">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="btn5" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn5" prefHeight="27.0" prefWidth="40.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="btn6" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn6" prefHeight="27.0" prefWidth="40.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="4">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="btn7" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn7" prefHeight="27.0" prefWidth="40.0" text="7" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="btn8" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn8" prefHeight="27.0" prefWidth="40.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="btn9" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn9" prefHeight="27.0" prefWidth="40.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="btn0" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn0" prefHeight="27.0" prefWidth="90.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="6">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="dotBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#dotBtn" prefHeight="27.0" prefWidth="40.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="6">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="plusBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#plusBtn" prefHeight="80.0" prefWidth="40.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#minusBtn" prefHeight="27.0" prefWidth="40.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="multiplyBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#multiplyBtn" prefHeight="27.0" prefWidth="40.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="2">
-         <GridPane.margin>
-            <Insets left="5.0" right="5.0" />
-         </GridPane.margin></Button>
-      <Button id="divideBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#divideBtn" prefHeight="27.0" prefWidth="40.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="2">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
-      <Button id="percentBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#percentBtn" prefHeight="27.0" prefWidth="40.0" text="\%" GridPane.rowIndex="2">
-          <GridPane.margin>
-              <Insets left="5.0" right="5.0" />
-          </GridPane.margin></Button>
+    <Button id="btn1" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn1" prefHeight="27.0" prefWidth="40.0"
+            text="1" GridPane.rowIndex="5">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn2" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn2" prefHeight="27.0" prefWidth="40.0"
+            text="2" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn3" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn3" prefHeight="27.0" prefWidth="40.0"
+            text="3" GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn4" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn4" prefHeight="27.0" prefWidth="40.0"
+            text="4" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn5" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn5" prefHeight="27.0" prefWidth="40.0"
+            text="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn6" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn6" prefHeight="27.0" prefWidth="40.0"
+            text="6" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn7" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn7" prefHeight="27.0" prefWidth="40.0"
+            text="7" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn8" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn8" prefHeight="27.0" prefWidth="40.0"
+            text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn9" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn9" prefHeight="27.0" prefWidth="40.0"
+            text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="btn0" maxWidth="Infinity" mnemonicParsing="false" onAction="#btn0" prefHeight="27.0" prefWidth="90.0"
+            text="0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="dotBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#dotBtn" prefHeight="27.0"
+            prefWidth="40.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="6">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="plusBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#plusBtn" prefHeight="80.0"
+            prefWidth="40.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#minusBtn" prefHeight="27.0"
+            prefWidth="40.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="multiplyBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#multiplyBtn" prefHeight="27.0"
+            prefWidth="40.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="divideBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#divideBtn" prefHeight="27.0"
+            prefWidth="40.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
+    <Button id="percentBtn" maxWidth="Infinity" mnemonicParsing="false" onAction="#percentBtn" prefHeight="27.0"
+            prefWidth="40.0" text="\%" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets left="5.0" right="5.0"/>
+        </GridPane.margin>
+    </Button>
 
 </GridPane>
