@@ -75,6 +75,7 @@ public class Controller {
             value.set("");
             imaJednako = false;
         }
+        if(imaOperacija )imaDrugiBroj = true;
         value.set(value.get() + "6");
     }
 
@@ -115,13 +116,14 @@ public class Controller {
     }
 
     public void dotBtn(ActionEvent actionEvent) {
-        if ((imaOperacija && !imaDrugiBroj) || imaJednako) {
+        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
             value.set("0.");
             imaJednako = false;
             imaTacka = true;
+            if(imaOperacija )imaDrugiBroj = true;
             return;
         }
-        if (!imaTacka) value.set(value.get() + ".");
+        if(!imaTacka) value.set(value.get() + ".");
         imaTacka = true;
     }
 
@@ -138,6 +140,7 @@ public class Controller {
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
+        imaTacka = false;
         operacija = '-';
     }
 
@@ -146,6 +149,7 @@ public class Controller {
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
+        imaTacka = false;
         operacija = '*';
     }
 
@@ -154,6 +158,7 @@ public class Controller {
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
+        imaTacka = false;
         operacija = '/';
     }
 
@@ -162,6 +167,7 @@ public class Controller {
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
+        imaTacka = false;
         operacija = '%';
     }
 
