@@ -1,7 +1,8 @@
-#jednakoBtn {
+#equalsBtn {
     -fx-background-color: lightcoral;
 }
 
 #rezultatField {
     -fx-background-color: lightgreen;
+    -fx-font-family:Verdana;
 }
