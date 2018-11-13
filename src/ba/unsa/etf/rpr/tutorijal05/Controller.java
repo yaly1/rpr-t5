@@ -24,93 +24,61 @@ public class Controller {
         return value.get();
     }
 
-    public void btn1() {
+    private void pomocnaFunkcijaZaBrojeve() {
         if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
             value.set("");
             imaJednako = false;
         }
         if (imaOperacija) imaDrugiBroj = true;
+    }
+
+    public void btn1() {
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "1");
     }
 
     public void btn2() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "2");
     }
 
     public void btn3() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "3");
     }
 
     public void btn4() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "4");
     }
 
     public void btn5() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "5");
     }
 
     public void btn6() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "6");
     }
 
     public void btn7() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "7");
     }
 
     public void btn8() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "8");
     }
 
     public void btn9() {
-        if (value.get().equals("0") || (imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         value.set(value.get() + "9");
     }
 
     public void btn0() {
-        if ((imaOperacija && !imaDrugiBroj) || imaJednako) {
-            value.set("");
-            imaJednako = false;
-        }
-        if (imaOperacija) imaDrugiBroj = true;
+        pomocnaFunkcijaZaBrojeve();
         if (!value.get().equals("0")) value.set(value.get() + "0");
     }
 
@@ -126,47 +94,35 @@ public class Controller {
         imaTacka = true;
     }
 
-    public void plusBtn() {
+    private void pomocnaFunkcijaZaOperacije() {
         if (imaDrugiBroj) equalsBtn();
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
+    }
+
+    public void plusBtn() {
+        pomocnaFunkcijaZaOperacije();
         operacija = '+';
     }
 
     public void minusBtn() {
-        if (imaDrugiBroj) equalsBtn();
-        prviBroj = Double.parseDouble(value.get());
-        imaDrugiBroj = false;
-        imaOperacija = true;
-        imaTacka = false;
+        pomocnaFunkcijaZaOperacije();
         operacija = '-';
     }
 
     public void multiplyBtn() {
-        if (imaDrugiBroj) equalsBtn();
-        prviBroj = Double.parseDouble(value.get());
-        imaDrugiBroj = false;
-        imaOperacija = true;
-        imaTacka = false;
+        pomocnaFunkcijaZaOperacije();
         operacija = '*';
     }
 
     public void divideBtn() {
-        if (imaDrugiBroj) equalsBtn();
-        prviBroj = Double.parseDouble(value.get());
-        imaDrugiBroj = false;
-        imaOperacija = true;
-        imaTacka = false;
+        pomocnaFunkcijaZaOperacije();
         operacija = '/';
     }
 
     public void percentBtn() {
-        if (imaDrugiBroj) equalsBtn();
-        prviBroj = Double.parseDouble(value.get());
-        imaDrugiBroj = false;
-        imaOperacija = true;
-        imaTacka = false;
+        pomocnaFunkcijaZaOperacije();
         operacija = '%';
     }
 
@@ -190,6 +146,4 @@ public class Controller {
             imaTacka = false;
         }
     }
-
-
 }
