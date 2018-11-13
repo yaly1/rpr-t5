@@ -175,8 +175,10 @@ public class Controller {
                 value.set(String.valueOf(prviBroj - drugiBroj));
             else if(operacija == '*')
                 value.set(String.valueOf(prviBroj * drugiBroj));
-            else if(operacija == '/')
-                value.set(String.valueOf(prviBroj / drugiBroj));
+            else if(operacija == '/') {
+                if(drugiBroj == 0) value.set("NaN");
+                else value.set(String.valueOf(prviBroj / drugiBroj));
+            }
             else if(operacija == '%')
                 value.set(String.valueOf(prviBroj % drugiBroj));
 
