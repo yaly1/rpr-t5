@@ -29,9 +29,8 @@
     <RowConstraints maxHeight="101.0" minHeight="10.0" percentHeight="20" prefHeight="25.0" vgrow="ALWAYS" />
       <RowConstraints maxHeight="157.0" minHeight="10.0" percentHeight="20" prefHeight="86.0" vgrow="ALWAYS" />
   </rowConstraints>
-
-   <children>
-      <TextField id="rezultatField" maxWidth="1.7976931348623157E308" prefHeight="37.0" prefWidth="590.0" GridPane.columnSpan="4" GridPane.rowIndex="1">
+  <children>
+      <TextField id="rezultatField" maxWidth="Infinity" prefHeight="37.0" prefWidth="590.0" GridPane.columnSpan="4" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></TextField>
@@ -39,15 +38,15 @@
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="4" GridPane.rowIndex="4">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="4" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="7" GridPane.rowIndex="3">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="7" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
@@ -55,15 +54,15 @@
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="4">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
@@ -75,31 +74,31 @@
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="*" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="6">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="6">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="40.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="80.0" prefWidth="40.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button id="jednakoBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="40.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
+      <Button id="jednakoBtn" maxWidth="Infinity" mnemonicParsing="false" prefHeight="80.0" prefWidth="40.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="\%" GridPane.rowIndex="2">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="\%" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
-      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="6">
+      <Button maxWidth="Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="40.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="6">
          <GridPane.margin>
             <Insets left="5.0" right="5.0" />
          </GridPane.margin></Button>
