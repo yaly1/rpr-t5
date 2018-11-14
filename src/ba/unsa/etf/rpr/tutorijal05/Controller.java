@@ -99,6 +99,7 @@ public class Controller {
         prviBroj = Double.parseDouble(value.get());
         imaDrugiBroj = false;
         imaOperacija = true;
+        imaTacka = false;
     }
 
     public void plusBtn() {
@@ -140,7 +141,7 @@ public class Controller {
                 if (drugiBroj == 0) value.set("NaN");
                 else value.set(String.valueOf(prviBroj / drugiBroj));
             } else if (operacija == '%')
-                value.set(String.valueOf(prviBroj % drugiBroj));
+                value.set(String.valueOf(prviBroj/100 * drugiBroj));
 
             imaOperacija = false;
             imaTacka = false;
