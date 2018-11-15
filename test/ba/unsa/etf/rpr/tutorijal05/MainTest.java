@@ -247,4 +247,35 @@ class MainTest {
         assertEquals("27.0", display.getText());
     }
 
+    @Test
+    void equalsWithoutOperation(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn0");
+        robot.clickOn("#equalsBtn");
+        robot.clickOn("#btn4");
+        assertEquals("4", display.getText());
+    }
+
+    @Test
+    void equalsWithoutOperand1(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#equalsBtn");
+        robot.clickOn("#btn3");
+        assertEquals("3", display.getText());
+    }
+
+    @Test
+    void equalsWithoutOperand2(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#equalsBtn");
+        robot.clickOn("#btn3");
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#equalsBtn");
+        assertEquals("3.0", display.getText());
+    }
 }

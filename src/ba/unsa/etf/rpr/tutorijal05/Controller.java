@@ -128,8 +128,8 @@ public class Controller {
     }
 
     public void equalsBtn() {
-        if (imaOperacija) {
-            imaJednako = true;
+        if (imaOperacija && imaDrugiBroj) {
+
             double drugiBroj = Double.parseDouble(value.get());
             if (operacija == '+')
                 value.set(String.valueOf(prviBroj + drugiBroj));
@@ -141,10 +141,11 @@ public class Controller {
                 if (drugiBroj == 0) value.set("NaN");
                 else value.set(String.valueOf(prviBroj / drugiBroj));
             } else if (operacija == '%')
-                value.set(String.valueOf(prviBroj/100 * drugiBroj));
-
-            imaOperacija = false;
-            imaTacka = false;
+                value.set(String.valueOf(prviBroj / 100 * drugiBroj));
         }
+        value.set(String.valueOf(Double.parseDouble(value.get())));
+        imaJednako = true;
+        imaOperacija = false;
+        imaTacka = false;
     }
 }
